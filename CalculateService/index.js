@@ -190,7 +190,7 @@ class CalculatorService {
     #multiplyNumber(a, b, useBigInt = false) {
         try {
             if (useBigInt) {
-                return this.multiplyNumberBigInteger(a, b);
+                return this.#multiplyNumberBigInteger(a, b);
             }
             return Number((Number(a) * Number(b)).toFixed(this.defaultPrecision));
         } catch (error) {
